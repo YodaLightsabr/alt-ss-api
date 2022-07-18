@@ -23,6 +23,9 @@ export async function getScreenshot(url, width, height) {
 body, div {
     font-family: 'Poppins', sans-serif;
 }
+.graph_instruction {
+    display: none;
+}
     ` });
     const file = await page.screenshot({ fullPage: true });
     return file;
