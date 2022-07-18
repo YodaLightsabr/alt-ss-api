@@ -23,7 +23,7 @@ export async function getScreenshot(url, width, height) {
 body, div {
     font-family: 'Poppins', sans-serif;
 }
-.graph_instruction {
+.graph_instruction, .done, .check {
     display: none;
 }
     ` });
