@@ -23,8 +23,20 @@ export async function getScreenshot(url, width, height) {
 body, div {
     font-family: 'Albert Sans', sans-serif;
 }
-.graph_instruction, .done, .check {
-    display: none;
+.graph_instruction, .check, #check_answer_button, #sharing_box, #feedback_box, #footer_desktop, #footer_div {
+    display: none!important;
+}
+body {
+    background-color: white!important;
+    background: white!important;
+}
+#steps_div {
+    border-radius: 12px;
+    box-shadow: none;
+    border: 3px solid #2ecc71;
+}
+div.done::after {
+    content: '!';
 }
     ` });
     const file = await page.screenshot({ fullPage: true });
