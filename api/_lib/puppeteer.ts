@@ -23,7 +23,7 @@ export async function getScreenshot(url, width, height) {
 body, div {
     font-family: 'Albert Sans', sans-serif;
 }
-.graph_instruction, .check, #check_answer_button, #sharing_box, #feedback_box, #footer_desktop, #footer_div {
+.graph_instruction, .check, #check_answer_button, #sharing_box, #feedback_box, #footer_desktop, #footer_div, #inline_choices {
     display: none!important;
 }
 body {
