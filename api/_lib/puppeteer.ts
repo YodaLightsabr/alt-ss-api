@@ -28,7 +28,7 @@ html, body {
     background-color: none!important;
     background: none!important;
 }
-.graph_instruction, .check, #check_answer_button, #sharing_box, #feedback_box, .footer_desktop, .footer_div, #inline_choices, div.push, .oops_title, .footer_inner_table {
+.graph_instruction, .check, #check_answer_button, #sharing_box, #feedback_box, .footer_desktop, .footer_div, #inline_choices, div.push, .oops_title, .footer_inner_table, #native_ad_div {
     display: none!important;
 }
 #steps_div {
