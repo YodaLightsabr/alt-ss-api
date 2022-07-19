@@ -36,6 +36,9 @@ html, body {
     box-shadow: none;
     border: 3px solid #2ecc71;
 }
+.banner_ad {
+  filter: opacity(0%);
+}
 div.done::after {
     content: '!';
 }
