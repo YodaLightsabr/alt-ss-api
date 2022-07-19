@@ -23,12 +23,13 @@ export async function getScreenshot(url, width, height) {
 body, div {
     font-family: 'Albert Sans', sans-serif;
 }
+html, body {
+    background-image: none!important;
+    background-color: none!important;
+    background: none!important;
+}
 .graph_instruction, .check, #check_answer_button, #sharing_box, #feedback_box, .footer_desktop, .footer_div, #inline_choices, div.push, .oops_title, .footer_inner_table {
     display: none!important;
-}
-body {
-    background-color: white!important;
-    background: white!important;
 }
 #steps_div {
     border-radius: 12px;
@@ -39,6 +40,6 @@ div.done::after {
     content: '!';
 }
     ` });
-    const file = await page.screenshot({ fullPage: true });
+    const file = await page.screenshot({ fullPage: true, omitBackground: true });
     return file;
 }
