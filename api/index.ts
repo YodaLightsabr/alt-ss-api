@@ -9,7 +9,7 @@ module.exports = async (req: Request, res: Response) => {
     "usage": usage
   });
   try {
-    const file = await getScreenshot(req.query.url, req.query.width, req.query.height);
+    const file = await getScreenshot(req.query.url, req.query.width, req.query.height, req.query.doNotAddStyles == 'true', req.query.waitForAssemble == 'true');
     res.setHeader('Content-Type', `image/png`);
     res.setHeader('Cache-Control', `public, immutable, no-transform, s-maxage=31536000, max-age=31536000`);
     res.status(200).end(file);
